@@ -26,18 +26,19 @@ Follow these steps to set up your environment and run the pipeline:
 ```bash
 git clone https://github.com/ratik-vig/healthcare_pipeline.git
 cd healthcare_pipeline
+```
 
 ### 2. Create virtual environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
+```
 
 ### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 Finally, go to pipeline.py file and run
