@@ -40,8 +40,8 @@ class DataIngest:
         s3 = session.client('s3')
 
         response = s3.list_objects_v2(Bucket='healthcarebigdata', Prefix='')
-        # files = [file['Key'] for file in response['Contents'] if file['Key'].endswith('.csv')]
-        files = ['2017.csv', '2019.csv', '2021.csv']
+        files = [file['Key'] for file in response['Contents'] if file['Key'].endswith('.csv')]
+        # files = ['2017.csv', '2019.csv', '2021.csv']
         dataFrames = []
 
         for file in files:
@@ -72,7 +72,7 @@ class DataIngest:
         'DIABETE3',
         when(self.df['DIABETE3'] == 2, 0)
         .when(self.df['DIABETE3'] == 3, 0)
-        .when(self.df['DIABETE3'] == 1, 2)
+        .when(self.df['DIABETE3'] == 1, 1)
         .when(self.df['DIABETE3'] == 4, 1)
         .otherwise(self.df['DIABETE3'])
         )

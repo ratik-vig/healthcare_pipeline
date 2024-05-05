@@ -74,5 +74,4 @@ class ML:
 
             plt.savefig('training_validation_metrics_dropout.png')
 
-            # Optionally, clear the current figure to free memory after saving
             plt.clf()

@@ -19,8 +19,8 @@ analytics_task = task(analytics.performStoreAnalysis)
 
 @flow
 def runpipeline():
-    # df = read_data_task('s3a://healthcarebigdata/')
-    df = read_data_task('/Users/ratikvig/Downloads/')
+    df = read_data_task('s3a://healthcarebigdata/*.csv')
+    # df = read_data_task('/Users/ratikvig/Downloads/')
 
     cleaned_df = clean_data_task()
 
