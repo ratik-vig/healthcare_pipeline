@@ -1,13 +1,9 @@
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader, TensorDataset
+
 from sklearn.model_selection import train_test_split
 import numpy as np
 from sklearn.metrics import f1_score
 from sklearn.utils.class_weight import compute_class_weight
 from imblearn.over_sampling import SMOTE
-import torch.nn.functional as F
 import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
@@ -18,7 +14,6 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 
-device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
 class LogisticRegression:
     def __init__(self):
