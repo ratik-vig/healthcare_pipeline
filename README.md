@@ -41,4 +41,6 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
+### Create a mongoDB database locally, called healthcare before running.
+
 Finally, go to pipeline.py file and run
