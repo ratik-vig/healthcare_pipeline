@@ -1,0 +1,7 @@
+pyspark
+pymongo
+prefect
+matplotlib
+pandas
+numpy
+scikit-learn

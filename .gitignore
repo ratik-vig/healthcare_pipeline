@@ -1,0 +1,10 @@
+# .gitignore
+
+venv/  # or the name of your virtual environment directory
+__pycache__/
+*.py[cod]  # Ignore compiled Python files.
+
+bin/
+include/
+lib/
+share/
